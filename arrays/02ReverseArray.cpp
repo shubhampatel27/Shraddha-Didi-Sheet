@@ -1,47 +1,11 @@
-//{ Driver Code Starts
-/* Driver program to test above function */
 
-#include<bits/stdc++.h>
-using namespace std;
+// //User function Template for C++
 
-// } Driver Code Ends
-//User function Template for C++
-
-class Solution
-{
-   public:
-    int findSum(int A[], int N)
-    {
-    	int mini = INT_MAX;
-    	int maxi = INT_MIN;
-    	for(int i=0; i<N; i++){
-    	    maxi= max(maxi, A[i]);
-    	    mini= min(mini, A[i]);
-    	}
-    	return pair (maxi,mini);
-    	
-    }
-
-};
-
-//{ Driver Code Starts.
-int main()
-{
-	int t;
-	cin>>t;
-	while(t--)
-	{
-	    int n;
-	    cin>>n;
-	    int arr[n];
-	    for(int i=0;i<n;i++)
-	      cin>>arr[i];
-	    Solution ob;  
-	    int ans=ob.findSum(arr, n);
-	    cout<<ans;
-	    cout<<"\n";
-	}
-	return 0;
-}
-
-// } Driver Code Ends
+// string reverseWord(string str){
+//     int n = str.size();
+//     for(int i=0; i<n/2; i++){
+//         swap(str[i], str[n-1-i]);
+//     }
+//   //Your code here
+//   return str;
+// }
